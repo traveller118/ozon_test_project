@@ -1,7 +1,8 @@
 const getData = () => {
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
-  .then(response => response.json())
-  .then(json => console.log(json))
+    return fetch('https://ozon-test-1330e-default-rtdb.firebaseio.com/goods.json')
+      .then((response) => {
+        return response.json()
+      })
 }
 
 export default getData
